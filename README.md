@@ -1,2 +1,2 @@
 # atschx.github.io
-github pages
+告别wordpress，拥抱jeklly
