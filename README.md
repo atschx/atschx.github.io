@@ -1,5 +1,5 @@
 # atschx.github.io
-> at -> 在 ，sch -> 姓名缩写， x->未知数。
+> write now,think more.
 
 ```
 “atschx”引申——在我这里都是未知。
