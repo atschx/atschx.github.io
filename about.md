@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: 我
+permalink: /me/
 ---
 
 ```
-孙长浩(Albert Sun)，Programmer、Internet enthusiasts、旅行者。
+孙长浩(Albert Sun)，`Programmer`、Internet enthusiasts、旅行者。
 ```
 
 > For what it's worth, it's never too late, or in my case, too early, to be whoever you want to be.
