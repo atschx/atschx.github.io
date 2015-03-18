@@ -2,7 +2,7 @@
 title: write now,think more
 email: atschx@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
- 在宇宙中留下你的足迹。孙长浩(Albert Sun)，Programmer、Internet enthusiasts、旅行者。
+ 在宇宙中留下你的足迹
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://atschx.com" # the base hostname & protocol for your site
 twitter_username: atschx
