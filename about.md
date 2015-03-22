@@ -4,8 +4,10 @@ title: 我
 permalink: /me/
 ---
 
+<img src="{{ site.baseurl }}/assets/images/Albert.jpg" width="269" height="300" title="Albert" alt="Albert">
+
 ```
-孙长浩(Albert Sun)，`Programmer`、Internet enthusiasts、旅行者。
+孙长浩(Albert Sun)，not only a `Programmer`、Internet enthusiasts.
 ```
 
 > For what it's worth, it's never too late, or in my case, too early, to be whoever you want to be.
