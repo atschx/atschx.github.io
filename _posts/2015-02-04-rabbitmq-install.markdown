@@ -1,0 +1,76 @@
+---
+author: Albert
+date: 2015-02-04 15:42:20+00:00
+layout: post
+title: RabbitMQ install
+categories: rabbitmq
+---
+
+> 各家MQ不做对比，仅记录安装过程，备忘，let's go！<br>环境：ubuntu 14.04.01 x86_64，安装模式基于rabbitmq  官方apt仓库.
+
+
+# 下载安装
+	
+  1. sudo vim /etc/apt/sources.list (deb http://www.rabbitmq.com/debian/ testing main)
+  2. wget https://www.rabbitmq.com/rabbitmq-signing-key-public.asc(国内建议https换为http)
+  3. sudo apt-key add rabbitmq-signing-key-public.asc
+  4. sudo apt-get update
+  5. sudo apt-get install rabbitmq-server
+
+
+附控制台输出示例
+
+    
+    root@atschx:~# sudo vim /etc/apt/sources.list
+    root@atschx:~# wget https://www.rabbitmq.com/rabbitmq-signing-key-public.asc
+    --2015-02-04 14:44:36--  https://www.rabbitmq.com/rabbitmq-signing-key-public.asc
+    Resolving www.rabbitmq.com (www.rabbitmq.com)... 192.240.153.117
+    Connecting to www.rabbitmq.com (www.rabbitmq.com)|192.240.153.117|:443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 1702 (1.7K) [text/plain]
+    Saving to: 'rabbitmq-signing-key-public.asc'
+    100%[======================================>] 1,702       --.-K/s   in 0s      
+    2015-02-04 14:44:36 (52.3 MB/s) - 'rabbitmq-signing-key-public.asc' saved [1702/1702]
+    root@atschx:~# sudo apt-key add rabbitmq-signing-key-public.asc
+    OK
+    root@atschx:~# apt-get update
+    root@atschx:~# apt-cache search rabbitmq-server
+    rabbitmq-server - AMQP server written in Erlang
+    chef-solr - manager for search indexes of Chef node attributes using Solr
+    root@atschx:~# apt-get install rabbitmq-server
+    Reading package lists... Done
+    ........
+    Setting up erlang-nox (1:16.b.3-dfsg-1ubuntu2.1) ...
+    Setting up lksctp-tools (1.0.15+dfsg-1) ...
+    Setting up rabbitmq-server (3.4.3-1) ...
+    Adding group `rabbitmq' (GID 115) ...
+    Done.
+    Adding system user `rabbitmq' (UID 107) ...
+    Adding new user `rabbitmq' (UID 107) with group `rabbitmq' ...
+    Not creating home directory `/var/lib/rabbitmq'.
+     * Starting message broker rabbitmq-server                                          [ OK ] 
+    Processing triggers for libc-bin (2.19-0ubuntu6.5) ...
+    Processing triggers for ureadahead (0.100.0-16) ...
+
+
+PS:采用apt的方式安装比较顺利，  rabbitmqctl status看下运行状态。
+
+
+# 基础管理
+
+  * 启用rabbitmq自带的管理控制台(sudo rabbitmq-plugins enable rabbitmq_management)[更多](https://www.rabbitmq.com/management.html)
+  * copy样例[配置文件](http://www.rabbitmq.com/configure.html#configuration-file)更多关于unix下[配置介绍](http://www.rabbitmq.com/configure.html#customise-general-unix-environment)
+  * 删除默认的guest用户，添加生产环境中的管理员用户
+
+拷贝配置文件，并做简单调整
+
+	root@atschx:/etc/rabbitmq# cd  /usr/share/doc/rabbitmq-server/
+    root@atschx:/usr/share/doc/rabbitmq-server# ls
+    README  changelog.Debian.gz  copyright  rabbitmq.config.example.gz
+    root@atschx:/usr/share/doc/rabbitmq-server# gunzip rabbitmq.config.example.gz 
+    root@atschx:/usr/share/doc/rabbitmq-server# cp rabbitmq.config.example  /etc/rabbitmq/rabbitmq.config
+    root@atschx:~# vi /etc/rabbitmq/rabbitmq.config 
+	
+使用rabbitmqctl添加用户，查看队列
+
+
