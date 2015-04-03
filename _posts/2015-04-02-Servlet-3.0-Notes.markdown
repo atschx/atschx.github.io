@@ -1,0 +1,32 @@
+---
+author: Albert
+date: 2015-04-02 15:29:10+00:00
+layout: post
+title: Servlet 3.0 中关于metadata-complete的说明
+categories: tech
+---
+
+> 案例: 最近在上线某活动时，之前访问正常的url更新后访问返回404。review提交日志，web.xml schema 换作3.0时无意中添加了`metadata-complete=“true”`，遂删除之，重启解决。
+
+事毕，重新翻阅了一下[servlet-3_0-final-spec]({{ site.baseurl }}/assets/pdf/servlet-3_0-final-spec.pdf)。看到这么一段：
+
+8.1 Annotations and pluggability
+--------------------------------
+
+In a web application, classes using annotations will have their annotations processed
+only if they are located in the WEB-INF/classes directory, or if they are packaged
+in a jar file located in WEB-INF/lib within the application.
+The web application deployment descriptor contains a new “metadata-complete”
+attribute on the web-app element. The “metadata-complete” attribute defines
+whether the web descriptor is complete, or whether the class files of the jar file
+should be examined for annotations and web fragments at deployment time. If
+“metadata-complete” is set to "true", the deployment tool MUST ignore any
+servlet annotations present in the class files of the application and web fragments. If
+the metadata-complete attribute is not specified or is set to "false", the
+deployment tool must examine the class files of the application for annotations, and
+scan for web fragments.
+Following are the annotations that MUST be supported by a Servlet 3.0 compliant
+web container.
+
+汗颜了，基于Anotation的注解式Servlet出来这么久，也就到今天才真正在生产环境中投入使用。
+
