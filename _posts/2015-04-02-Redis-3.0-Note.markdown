@@ -1,0 +1,11 @@
+---
+author: Albert
+date: 2015-04-01 14:29:10+00:00
+layout: post
+title: Redis 3.0 Note
+categories: tech
+---
+<img alt="Redis" src="{{ site.baseurl }}/assets/images/nosql/redis-white.png" style="padding: 1px 5px;width:120px;height:40px;background-color:#333;border: 1px solid #e8e8e8; border-radius: 3px;" />
+
+Redis 3.0 stable with  `cluster` 汹汹来袭。接招吧...
+
