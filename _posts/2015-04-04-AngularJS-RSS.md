@@ -24,6 +24,8 @@ Step by step,Get it!
 --------------------
 ![get it]({{ site.baseurl }}/assets/images/2015/04/angularjs-get-it.png)
 
+[level01-05.pdf](http://7xidkg.com1.z0.glb.clouddn.com/level01-05.pdf)
+
 > nice，so...
 
 * [canvas-gradient](http://victorblog.com/html5-canvas-gradient-creator/)
