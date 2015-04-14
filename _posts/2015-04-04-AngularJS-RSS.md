@@ -32,7 +32,9 @@ Step by step,Get it!
 * [angularJS-github-contributors](https://github.com/daha/angularJS-github-contributors)
 * [firepoker](http://firepoker.io/)
 
-have fun
+[博客园上转载](http://www.cnblogs.com/Answer1215/category/598518.html)
+
+have fun :-)
 --------
 [more](https://builtwith.angularjs.org/)
 
