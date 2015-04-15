@@ -4,7 +4,7 @@ title: 我
 permalink: /me/
 ---
 
-<img src="{{ site.baseurl }}/assets/images/Albert.jpg" width="269" height="300" title="Albert" alt="Albert">
+![me](http://tp4.sinaimg.cn/2068552371/180/40067830915/1)
 
 ```
 孙长浩(Albert Sun)，not only a `Programmer`、Internet enthusiasts.
