@@ -6,9 +6,8 @@ title:  日志·Log(Timestamp+data)
 categories: tech
 ---
 
-> Log = Timestamp + Data.
+> Log = Timestamp + Data.![logstash](http://7xil0c.com1.z0.glb.clouddn.com/logstash.png)
 
-![logstash](http://7xil0c.com1.z0.glb.clouddn.com/logstash.png)
 自工作以来，每每遇到生产环境的问题都不得不践踏傲娇的灵魂，然后默默的去观察日志。生产环境上采用`小黄鸭调试法`显然不奏效，只能事后分析日志，然后采取措施。何不把这个工作持续进行下来，即便线上没有问题，通过日志分析也可提早发现潜在问题，持续优化。
 
 Intro
