@@ -10,4 +10,6 @@ categories: tech
 
 今天介绍3个利器：
 
-* [logstash](http://logstash.net)
+* [logstash](http://logstash.net) collect log
+* [elsticsearch](https://github.com/elastic/elasticsearch) store and index log
+* [kibana](https://github.com/elastic/kibana) web fronted
