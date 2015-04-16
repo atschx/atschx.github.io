@@ -38,4 +38,12 @@ Setup
 2. Install Elasticsearch 
 	* ununtu下可以直接采用apt方式
 	* 下载后手动start
-3. Install Kibana (这个安装最简单,启动时要求已启动Elasticsearch)
+3. Install Kibana (这个安装最简单,启动时要求已启动Elasticsearch
+
+think more
+----------
+
+* 深入学习elasticsearch,参考这本[Elasticsearch:The Definitive Guide](http://www.elastic.co/guide/en/elasticsearch/guide/current/index.html)
+* 修炼内功logstash，参考这本[The_LogStash_Book](http://www.logstashbook.com/code/index.html)
+* 关于数据可视化，自行脑补。推荐[D3](http://d3js.org/)
+
