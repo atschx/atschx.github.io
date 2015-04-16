@@ -40,7 +40,14 @@ Setup
 	* 下载后手动start
 3. Install Kibana (这个安装最简单,启动时要求已启动Elasticsearch
 
-think more
+Test
+-----
+
+> bin/logstash -e 'input { stdin { } } output { elasticsearch { host => localhost } }'
+
+![snapshot](http://7xidkg.com1.z0.glb.clouddn.com/snapshot-logstash.png)
+
+Think more
 ----------
 
 * 深入学习elasticsearch,参考这本[Elasticsearch:The Definitive Guide](http://www.elastic.co/guide/en/elasticsearch/guide/current/index.html)
