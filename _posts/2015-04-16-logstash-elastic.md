@@ -56,6 +56,17 @@ github
 
 > Remember: if a new user has a bad time, it's a bug in logstash.
 
-http://www.cnblogs.com/vovlie/p/4227027.html
-http://www.firefoxbug.com/index.php/category/logstash--e6-9c-8d-e5-8a-a1-e5-99-a8/
-http://ju.outofmemory.cn/entry/113144
+1. http://www.cnblogs.com/vovlie/p/4227027.html
+2. http://www.firefoxbug.com/index.php/category/logstash--e6-9c-8d-e5-8a-a1-e5-99-a8/
+3. http://ju.outofmemory.cn/entry/113144
+
+案例分享
+-------
+
+日志格式
+
+	10.10.50.68 - - [17/Apr/2015:22:20:54 +0800] "POST /im-daos/dao/ims/chat HTTP/1.1" 200 16 2
+
+grok(http://grokdebug.herokuapp.com/)表达式
+
+	%{IPORHOST:clientip} %{USER:ident} %{USER:auth} \[%{HTTPDATE:timestamp}\] "(?:%{WORD:verb} %{NOTSPACE:request}(?: HTTP/%{NUMBER:httpversion})?|%{DATA:rawrequest})" %{NUMBER:response} (?:%{NUMBER:bytes}|-) (?:%{NUMBER:mills}|-)

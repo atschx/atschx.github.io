@@ -19,6 +19,10 @@ Security
 * [html5-websocket-security](http://blog.kaazing.com/2012/02/28/html5-websocket-security-is-strong/)
 * [html5-websocket-gateway-security](http://blog.kaazing.com/2012/02/29/kaazing-websocket-gateway-security-is-strong/)
 
+
+The WebSocket protocol uses the 400 Bad Request HTTP error code to signal an unsuccessful upgrade
+[Upgrading HTTP to WebSocket](http://enterprisewebbook.com/ch8_websockets.html)
+
 Load Balance
 ------------
 
