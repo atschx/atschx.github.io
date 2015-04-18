@@ -8,6 +8,14 @@ categories: tech
 
 > NB哄哄的`html5`标准在去年定稿之后，websocket就成了web开发中全双工通讯的典范。在ajax的世界中我们经常面临跨域访问的问题，受限于同源策略。websocket从协议设计层面化解了同源的爱恨情仇。
 
+关于推送
+--------
+
+* [commet](http://www.ibm.com/developerworks/cn/web/wa-reverseajax1/)
+* [websocket](http://www.ibm.com/developerworks/cn/web/wa-reverseajax2/)
+
+> 之前称之为反转Ajax.
+
 Security
 --------
 
