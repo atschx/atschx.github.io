@@ -18,18 +18,10 @@ Intro ELK
 
 >  Using Elasticsearch as a backend datastore, and kibana as a frontend reporting tool, Logstash acts as the workhorse, creating a powerful pipeline for storing, querying and analyzing your logs. With an arsenal of built-in inputs, filters, codecs and outputs, you can harness some powerful functionality with a small amount of effort. 
 
-Setup
------
+Logstash
+--------
 
-1. Install Logstash
-	* ruby1.8.7 
-	* curl -O https://download.elasticsearch.org/logstash/logstash/logstash-1.4.2.tar.gz
-	* tar zxvf logstash-1.4.2.tar.gz && cd logstash-1.4.2 
-	* bin/logstash -e 'input { stdin { } } output { stdout {} }'
-2. Install Elasticsearch 
-	* ununtu下可以直接采用apt方式
-	* 下载后手动start
-3. Install Kibana (这个安装最简单,启动时要求已启动Elasticsearch
+<img alt="logstash" src="http://7xidkg.com1.z0.glb.clouddn.com/logstash-architecture.png" width="572" height="323" />
 
 Test
 -----
