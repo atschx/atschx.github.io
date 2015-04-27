@@ -20,7 +20,16 @@ Here We GO
 Intro Websocket
 ===============
 
-websocket没听过，不打紧。反转ajax呢？那些年server端调用前段ajax代码时的各种酸爽，内存/网络/会话/轮询 etc.
+websocket没听过，不打紧。反转ajax呢？那些年server端调用前段ajax代码时的各种酸爽，还记得吗(内存爆仓没有)？
+
+spec. 弄明白吧，不服可以挑战哦
+
+* [rfc6455](http://tools.ietf.org/pdf/rfc6455.pdf)
+* [jsr356](https://jcp.org/en/jsr/detail?id=356)
+
+I'm a javaer, not only.
+======================
+
 
 * [commet](http://www.ibm.com/developerworks/cn/web/wa-reverseajax1/)
 * [websocket](http://www.ibm.com/developerworks/cn/web/wa-reverseajax2/)
