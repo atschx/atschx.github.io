@@ -34,8 +34,8 @@ websocket没听过，不打紧。反转ajax呢？那些年server端调用前段a
  not rely on opening multiple HTTP connections (e.g., using
  XMLHttpRequest or <iframe>s and long polling).
 
-I'm a programmer, not only
-==========================
+I'm a programmer, not only'
+===========================
 
 惊鸿一瞥,帅到没朋友~
 
@@ -59,7 +59,8 @@ public class EchoServer {
 client 代码看这里 [using_websocket_in_javascript_client](http://enterprisewebbook.com/ch8_websockets.html#ex_using_websocket_in_javascript_client)
 
 you know,spec.
-
+ 
+ * [rfc2616](https://www.ietf.org/rfc/rfc2616.pdf)
  * [rfc6455](http://tools.ietf.org/pdf/rfc6455.pdf)
  * [jsr356](https://jcp.org/en/jsr/detail?id=356)
  * [websocket](http://www.w3.org/TR/websockets/)
