@@ -88,6 +88,7 @@ Sec-WebSocket-Version: 13
 * [通用首部](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields)
 * [connection](http://tools.ietf.org/html/rfc7230#section-6.1)
 * [upgrade](http://en.wikipedia.org/wiki/HTTP/1.1_Upgrade_header)
+* [BuildingHTML5WebSocketApplicationsInJava](https://qconsf.com/sf2012/dl/qcon-sanfran-2012/slides/ArunGupta_JSR356BuildingHTML5WebSocketApplicationsInJavaMOVEDTOSEACLIFFAB.pdf)
 
 Security
 --------
