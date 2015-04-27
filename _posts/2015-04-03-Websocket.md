@@ -69,14 +69,31 @@ you know,spec.
 1. 客户端发起Get请求
 
 {% highlight sh linenos %}	
-GET /chat HTTP/1.1
-Host: server.example.com
-Upgrade: websocket
+GET ws://localhost:8080/summer-websocket/echo HTTP/1.1
+Host: localhost:8080
 Connection: Upgrade
-Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
-Origin: http://example.com
-Sec-WebSocket-Protocol: chat, superchat
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+Origin: http://localhost:8080
 Sec-WebSocket-Version: 13
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+Sec-WebSocket-Key: w6/VMRsKAqt4CdncJXjKpw==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+{% endhighlight %}
+
+2. 服务端响应
+
+{% highlight sh linenos %} 
+HTTP/1.1 101 Switching Protocols
+Server: Apache-Coyote/1.1
+Upgrade: websocket
+Connection: upgrade
+Sec-WebSocket-Accept: x9zpAgi0XqA0u36+nALpK7I4ODw=
+Sec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=15
+Date: Mon, 27 Apr 2015 17:44:52 GMT
 {% endhighlight %}
 
 备注：通过指定的`Upgrade: websocket` [请求协议升级websocket](https://tools.ietf.org/html/rfc6455#section-11.2),理所应当的这条请求的Connection为upgrade.Sec-打头的几个需要特别关注下，这个也将涉及到安全策略问题。
