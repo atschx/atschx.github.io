@@ -11,9 +11,9 @@ categories: tech
 Here We GO
 ----------
 
-1. 介绍：websocket
-2. 案例：step by step
-3. 思考：碎碎念
+1. 介绍:Intro Websocket
+2. 剖析:I‘m a programmer,not only
+3. 落地:In Action
 
 Intro Websocket
 ===============
@@ -90,10 +90,10 @@ Sec-WebSocket-Version: 13
 * [upgrade](http://en.wikipedia.org/wiki/HTTP/1.1_Upgrade_header)
 * [BuildingHTML5WebSocketApplicationsInJava](https://qconsf.com/sf2012/dl/qcon-sanfran-2012/slides/ArunGupta_JSR356BuildingHTML5WebSocketApplicationsInJavaMOVEDTOSEACLIFFAB.pdf)
 
-Security
---------
+In Action
+=========
 
-> Websocket在生产环境中落地后，开始思考应用层安全问题。
+> Websocket在生产环境中落地，思考应用层安全问题
 
 ![Websocket Sec]({{ site.baseurl }}/assets/images/2015/04/websoket-sec-cables.jpg)
 
