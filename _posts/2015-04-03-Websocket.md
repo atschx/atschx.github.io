@@ -64,12 +64,36 @@ you know,spec.
  * [jsr356](https://jcp.org/en/jsr/detail?id=356)
  * [websocket](http://www.w3.org/TR/websockets/)
 
+读完上面的协议，websocket的建立需要以下几个步骤：
+
+1. 客户端发起Get请求
+
+{% highlight sh linenos %}	
+GET /chat HTTP/1.1
+Host: server.example.com
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
+Origin: http://example.com
+Sec-WebSocket-Protocol: chat, superchat
+Sec-WebSocket-Version: 13
+{% endhighlight %}
+
+备注：通过指定的`Upgrade: websocket` [请求协议升级websocket](https://tools.ietf.org/html/rfc6455#section-11.2),理所应当的这条请求的Connection为upgrade.Sec-打头的几个需要特别关注下，这个也将涉及到安全策略问题。
+
+> 在`ajax`的世界里，跨域访问的安全问题就受限于同源策略，websocket从协议设计层面化解了同源的爱恨情仇。
+
+延伸阅读
+
+* [通用首部](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields)
+* [connection](http://tools.ietf.org/html/rfc7230#section-6.1)
+* [upgrade](http://en.wikipedia.org/wiki/HTTP/1.1_Upgrade_header)
+
 Security
 --------
 
 > Websocket在生产环境中落地后，开始思考应用层安全问题。
 
-在ajax的世界中我们经常面临跨域访问的问题，受限于同源策略。websocket从协议设计层面化解了同源的爱恨情仇。
 ![Websocket Sec]({{ site.baseurl }}/assets/images/2015/04/websoket-sec-cables.jpg)
 
 * [developer.kaazing](http://developer.kaazing.com/documentation/html5/3.5/security/c_sec_security.html)
