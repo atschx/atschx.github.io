@@ -1,20 +1,29 @@
 ---
 author: Albert
-date: 2015-04-03 17:33:10+00:00
+date: 2015-04-03 23:33:23+00:00
 layout: post
 title: WebSocket·Notes
 categories: tech
 ---
 
-> `html5`标准定稿，`websocket`一骑绝尘，liveApp遍地开花......
+> [HTML5定稿](http://www.w3.org/TR/html5/)，`websocket`一骑绝尘，`cavas`风情万种，liveApp遍地开花......
 
-关于推送
---------
+作为一名coder安静地写代码是本能，记住走过的路 —— 这世界我来过。就此刻空气冷却下来，深夜...
+
+Here We GO
+----------
+
+1. 介绍：websocket
+2. 案例：step by step
+3. 思考：碎碎念
+
+Intro Websocket
+===============
+
+websocket没听过，不打紧。反转ajax呢？那些年server端调用前段ajax代码时的各种酸爽，内存/网络/会话/轮询 etc.
 
 * [commet](http://www.ibm.com/developerworks/cn/web/wa-reverseajax1/)
 * [websocket](http://www.ibm.com/developerworks/cn/web/wa-reverseajax2/)
-
-> 之前称之为反转Ajax.
 
 Security
 --------
