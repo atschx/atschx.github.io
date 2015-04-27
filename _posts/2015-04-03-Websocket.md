@@ -6,9 +6,7 @@ title: WebSocket·Notes
 categories: tech
 ---
 
-> [HTML5定稿](http://www.w3.org/TR/html5/)，`websocket`一骑绝尘，`cavas`风情万种，liveApp遍地开花......
-
-作为一名coder安静地写代码是本能，记住走过的路 —— 这世界我来过。就此刻空气冷却下来，深夜...
+> 一名coder写代码是本能，用文字记住走过的路 —— 这世界我来过。就此刻·深夜，空气冷却下来...
 
 Here We GO
 ----------
@@ -20,19 +18,51 @@ Here We GO
 Intro Websocket
 ===============
 
-websocket没听过，不打紧。反转ajax呢？那些年server端调用前段ajax代码时的各种酸爽，还记得吗(内存爆仓没有)？
-
-spec. 弄明白吧，不服可以挑战哦
-
-* [rfc6455](http://tools.ietf.org/pdf/rfc6455.pdf)
-* [jsr356](https://jcp.org/en/jsr/detail?id=356)
-
-I'm a javaer, not only.
-======================
-
+websocket没听过，不打紧。反转ajax呢？那些年server端调用前段ajax代码时的各种酸爽，还记得吗(内存爆仓没有)？一起回忆下：
 
 * [commet](http://www.ibm.com/developerworks/cn/web/wa-reverseajax1/)
 * [websocket](http://www.ibm.com/developerworks/cn/web/wa-reverseajax2/)
+
+> The WebSocket Protocol enables two-way communication between a client
+ running untrusted code in a controlled environment to a remote host
+ that has opted-in to communications from that code. The security
+ model used for this is the origin-based security model commonly used
+ by web browsers. The protocol consists of an opening handshake
+ followed by basic message framing, layered over TCP. The goal of
+ this technology is to provide a mechanism for browser-based
+ applications that need two-way communication with servers that does
+ not rely on opening multiple HTTP connections (e.g., using
+ XMLHttpRequest or <iframe>s and long polling).
+
+I'm a programmer, not only
+==========================
+
+惊鸿一瞥,帅到没朋友~
+
+{% highlight java linenos %}
+package com.atschx.summer.websocket;
+
+import javax.servlet.annotation.WebServlet;
+import javax.websocket.OnMessage;
+import javax.websocket.server.ServerEndpoint;
+
+@WebServlet
+@ServerEndpoint("/echo")
+public class EchoServer {
+	@OnMessage
+	public String handleMessage(String message) {
+		return "Got your message (" + message + "). Thanks !";
+	}
+}
+{% endhighlight %}
+
+client 代码看这里 [using_websocket_in_javascript_client](http://enterprisewebbook.com/ch8_websockets.html#ex_using_websocket_in_javascript_client)
+
+you know,spec.
+
+ * [rfc6455](http://tools.ietf.org/pdf/rfc6455.pdf)
+ * [jsr356](https://jcp.org/en/jsr/detail?id=356)
+ * [websocket](http://www.w3.org/TR/websockets/)
 
 Security
 --------
@@ -57,3 +87,4 @@ Load Balance
 
 [haproxy-websocket](http://blog.haproxy.com/2012/11/07/websockets-load-balancing-with-haproxy/)
 
+> [HTML5定稿](http://www.w3.org/TR/html5/)，`websocket`一骑绝尘，`cavas`风情万种，liveApp遍地开花......
