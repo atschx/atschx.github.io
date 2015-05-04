@@ -38,6 +38,12 @@ Elasticsearch
 * bigdesk
 * paramedic
 
+Collectd
+--------
+
+> 5月1号，留意到colletd，精悍。使用`collectd`收集服务器的状态信息，get.
+
+<img alt="collectd" src="{{ site.baseurl }}/assets/images/collectd_memory.png" />
 
 Test
 -----
