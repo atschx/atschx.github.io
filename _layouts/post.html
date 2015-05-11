@@ -12,12 +12,14 @@ type: post
   <article class="post-content">
     {{ content }}
   </article>
-  <form action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK">
+<!-- 
+ <form action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK">
 	<input name="optEmail" type="hidden" value="atschx@gmail.com" />
 	<input name="payAmount" type="hidden" value="5" />
 	<input id="title" name="title" type="hidden" value="打赏" />
 	<input name="memo" type="hidden" value="备注" />
 	<input name="pay" type="image" value="打赏" src="https://img.alipay.com/sys/personalprod/style/mc/btn-index.png" />
   </form>
- {% include disqus_comment.html  %}
+--> 
+{% include disqus_comment.html  %}
 </div>
