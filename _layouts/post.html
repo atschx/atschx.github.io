@@ -21,5 +21,6 @@ type: post
 	<input name="pay" type="image" value="打赏" src="https://img.alipay.com/sys/personalprod/style/mc/btn-index.png" />
   </form>
 --> 
-{% include disqus_comment.html  %}
+{% if page.comments %}{% include disqus_comment.html %}{% endif %}
+
 </div>
