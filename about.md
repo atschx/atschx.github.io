@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 我
-permalink: /me/
+title: biography
+permalink: /about/
 ---
 
 ![me](http://tp4.sinaimg.cn/2068552371/180/40067830915/1)
