@@ -235,3 +235,21 @@
         }
     }
 }
+
+/*style for biography photo*/
+.pf-photo{
+    width:100px;
+    height:100px;
+    padding:4px;
+    margin:5px 0px;
+    border:solid #e8e8e8 1px;
+    background:#eef;
+    border-radius:50%;
+   /* background:rgba(255,255,255,0.3);*/
+}
+.photo{
+    width:100px;
+    height:100px;
+    background:rgba(255,255,255,0.3);
+    border-radius:50%;
+}
