@@ -7,5 +7,8 @@ categories: life
 ---
 
 年末的转角
+----------
+
+> Every thing is gonna be alright.
 
 左手温暖右手，相信明天会更好
