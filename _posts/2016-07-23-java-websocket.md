@@ -3,7 +3,7 @@ layout: post
 title:  Java WebSocket ｀小样儿｀
 author: Albert
 date:   2016-07-23 15:30:35
-categories: tech、websocket
+categories: tech
 ---
 
 `WebSocket`为IM通讯提供了另一种实现方式。
