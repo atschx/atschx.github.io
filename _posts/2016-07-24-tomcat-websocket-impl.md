@@ -8,11 +8,17 @@ categories: tech
 
 以tomcat的实现来熟悉java-websocket的规范。
 
-##一.初始流程
+## 一.初始流程
 
-### 1. 通过SPI机制初始化WebSocketServletContainerInitializers(简称`WsSci`)
+### 1. 基于[SPI机制](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html)初始化 
 
-`org.apache.tomcat.websocket.server.WsSci` 遵循Servlet 3.0标准(ServletContainerInitializers (SCIs) are registered via an entry in the file META-INF/services/javax.servlet.ServletContainerInitializer that must be included in the JAR file that contains the SCI implementation)。
+> WebSocket Servlet Container Initializer (简称`WsSci`)
+>
+> ServletContainerInitializers (SCIs) are registered via an entry in the file META-INF/services/javax.servlet.ServletContainerInitializer that must be included in the JAR file that contains the SCI implementation
 
-此类在tomcat-websocket-8.0.36.jar包中，并在META-INF/services/javax.servlet.ServletContainerInitializer文件中被指定，此机制为JAVA自身的[SPI机制](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html)。
+tomcat-websocket-8.0.36.jar 包中的`org.apache.tomcat.websocket.server.WsSci` 遵循Servlet 3.0标准，并在META-INF/services/javax.servlet.ServletContainerInitializer文件中被指定，此机制即Java中的[SPI机制](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html)。
+
+### 2.创建WsServerContainer
+
+上一步中最重要的一环为构造并配置了WsServerContainer.
 
