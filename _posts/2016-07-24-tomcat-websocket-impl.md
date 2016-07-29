@@ -22,3 +22,6 @@ tomcat-websocket-8.0.36.jar 包中的`org.apache.tomcat.websocket.server.WsSci` 
 
 上一步中最重要的一环为构造并配置了WsServerContainer.
 
+其它细节
+
+WsThreadFactory 直接

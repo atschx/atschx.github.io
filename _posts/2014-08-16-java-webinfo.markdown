@@ -3,7 +3,7 @@ author: Albert
 date: 2014-08-16 09:57:52+00:00
 layout: post
 title: Java Web中WEB-INF目录的几点认识
-categories: 速度改变一切
+categories: tech
 ---
 
 ## 项目开发现场的一段对话

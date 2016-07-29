@@ -4,7 +4,7 @@ date: 2014-01-09 15:24:26+00:00
 layout: post
 title: 浅析JEasyOPC与JavaFX
 categories:
-- 速度改变一切
+- tech
 tags:
 - JEasyOpc
 ---

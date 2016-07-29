@@ -3,8 +3,7 @@ author: Albert
 date: 2014-08-17 15:34:39+00:00
 layout: post
 title: 响应式WEB设计
-categories:
-- 速度改变一切
+categories: tech
 tags:
 - 响应式
 ---

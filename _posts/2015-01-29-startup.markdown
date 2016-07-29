@@ -3,8 +3,7 @@ author: Albert
 date: 2015-01-29 23:29:35+00:00
 layout: post
 title: 创业·Startup
-categories:
-- 随笔
+categories: work
 tags:
 - 创业
 ---

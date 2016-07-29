@@ -4,8 +4,7 @@ comments: true
 date: 2014-01-05 15:33:24+00:00
 layout: post
 title: 控制反转,依赖注入
-categories:
-- 速度改变一切
+categories: tech
 tags:
 - DI
 - IOC
