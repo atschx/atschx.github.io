@@ -8,7 +8,7 @@ permalink: /about/
 
 <div class="pf-photo">
  <a href="http://weibo.com/atschx" alt="atschx" class="photo">
-  <img src="http://tp4.sinaimg.cn/2068552371/180/40067830915/1" class="photo" >
+  <img src="https://avatars3.githubusercontent.com/u/4844245?v=3&s=400" class="photo" >
  </a>
 </div>
 
