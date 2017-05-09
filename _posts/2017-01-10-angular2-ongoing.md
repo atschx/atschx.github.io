@@ -6,7 +6,7 @@ date:   2017-01-10 20:20:30
 categories: tech
 ---
 
-> 技术遍地开发，选择最适合自己和团队的，而不是techshow。
+前端技术遍地开花，选择最适合自己和团队的。一味的求新注定是索然无味的 `Tech Show` 。
 
 ## TypeScript
 
