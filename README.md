@@ -1,9 +1,8 @@
 # atschx.github.io
-> write now,think more.
+> 一个互联网从业者的自白。
 
-```
+write now,think more(different).
+
 “atschx”引申——在我这里都是未知。
 
-孙长浩(Albert Sun)，Programmer、Internet enthusiasts.
-
-```
+Albert Sun(孙长浩)，Programmer、Internet enthusiasts.
