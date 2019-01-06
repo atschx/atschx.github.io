@@ -9,4 +9,8 @@ twitter_username: atschx
 github_username:  atschx
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "with_toc_data"]
+  # extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
