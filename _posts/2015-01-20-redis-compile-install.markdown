@@ -4,7 +4,7 @@ comments: false
 date: 2015-01-20 16:39:02+00:00
 layout: post
 title: Redis compile install
-tags: Redis
+categories: work
 ---
 
 > 准备环境：ubuntu 14.04.1(trusty)
