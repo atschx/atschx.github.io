@@ -4,23 +4,15 @@ type: post
 ---
 <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <a href="https://github.com/atschx">{{ page.author }}</a>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
- </header>
+	<header class="post-header">
+		<h1 class="post-title">{{ page.title }}</h1>
+		<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <a
+				href="https://github.com/atschx">{{ page.author }}</a>{% endif %}{% if page.meta %} • {{ page.meta }}{%
+			endif %}</p>
+	</header>
 
- <article class="post-content">
-    {{ content }}
- </article>
-<!-- 
- <form action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK">
-	<input name="optEmail" type="hidden" value="atschx@gmail.com" />
-	<input name="payAmount" type="hidden" value="5" />
-	<input id="title" name="title" type="hidden" value="打赏" />
-	<input name="memo" type="hidden" value="备注" />
-	<input name="pay" type="image" value="打赏" src="https://img.alipay.com/sys/personalprod/style/mc/btn-index.png" />
- </form>
- <wb:share-button appkey="1543662497" addition="number" type="button"></wb:share-button>
--->
+	<article class="post-content">
+		{{ content }}
+	</article>
 
 </div>
