@@ -31,17 +31,19 @@ Based on OKLCH color roles with shared hues across modes:
 
 ## Technical Implementation
 
-- **Framework**: Jekyll + GitHub Pages
-- **Typography**: 
-  - Bodoni Moda (variable) for brand name and headings
-  - IBM Plex Sans for body text
-  - IBM Plex Mono for labels and metadata
-  - Loaded via Google Fonts CDN
-- **Browser Support**: Modern browsers with CSS3 support
+- **Framework**: Jekyll + GitHub Pages, serving one static `index.html`
+- **Typography** (embedded in `index.html`, no font CDN at runtime):
+  - Bodoni Moda variable, latin only, optical size 6–96 and weight 500–600, for the brand name and English entry titles
+  - IBM Plex Sans 400, latin only, for UI text
+  - IBM Plex Mono 400, latin only, for labels and metadata
+  - Chinese uses the system stack after IBM Plex Sans: PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, sans-serif
+- **Licenses**: SIL Open Font License 1.1
+  - `assets/fonts/OFL-BodoniModa.txt`
+  - `assets/fonts/OFL-IBMPlexSans.txt`
+  - `assets/fonts/OFL-IBMPlexMono.txt`
+- **Browser Support**: Modern browsers with CSS3 and WOFF2 support
 - **Files**:
-  - `index.html` - Homepage structure
-  - `assets/css/main.css` - Direction E style system
-  - `assets/css/fonts.css` - Font loading
+  - `index.html` - Homepage: markup, inlined CSS, and subset WOFF2 data URIs
   - `_config.yml` - Jekyll configuration
 
 ## Preserved from Previous Site
