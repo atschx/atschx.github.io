@@ -17,7 +17,7 @@ Based on OKLCH color roles with shared hues across modes:
 
 ### Layout Structure
 - Oversized "atschx" in Bodoni Moda typeface
-- Positioning line: **都是为此**
+- Positioning line: **在我这里都是未知**
 - Three navigation entries:
   - **Blog** → https://blog.atschx.me (live, solid line)
   - **Photography** → Coming soon (dashed line, not clickable)
