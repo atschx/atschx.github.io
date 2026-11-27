@@ -1,0 +1,2 @@
+# Placeholder: noise-tile.png should be a 180x180 grayscale noise texture
+# For now, we'll handle this via CSS filters or skip it

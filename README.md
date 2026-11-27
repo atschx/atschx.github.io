@@ -1,8 +1,0 @@
-# atschx.github.io
-> 一个互联网从业者的自白。
-
-write now,think more(different).
-
-“atschx”引申——在我这里都是未知。
-
-Programmer、Internet enthusiasts.

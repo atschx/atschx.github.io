@@ -1,23 +1,56 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="atschx - 都是为此">
+  <title>atschx</title>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="dir-e">
+  <p class="site-meta">atschx.me</p>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <h1 class="name">atschx</h1>
+  <div class="pos" role="note" aria-label="Positioning line">
+    <p class="pos-line" lang="zh-Hans">都是为此</p>
+  </div>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+  <nav class="ways" aria-label="Ways in">
+    <div class="node" aria-hidden="true"><span class="node-dot"></span></div>
+    <ol>
+      <li class="branch is-live">
+        <span class="arm" aria-hidden="true"></span>
+        <a href="https://blog.atschx.me/">
+          <span class="entry-name">Blog ↗</span>
+          <span class="entry-zh">博客</span>
+          <span class="entry-desc" lang="en">Writing and notes.</span>
+          <span class="entry-zhdesc" lang="zh-Hans">文章与记录。</span>
+        </a>
       </li>
-    {% endfor %}
-  </ul>
+      <li class="branch is-soon">
+        <span class="arm" aria-hidden="true"></span>
+        <div>
+          <span class="entry-name">Photography</span>
+          <span class="entry-zh">摄影</span>
+          <span class="entry-desc" lang="en">Pictures and series.</span>
+          <span class="entry-zhdesc" lang="zh-Hans">影像与系列。</span>
+          <span class="entry-status">Coming soon. / 作品集尚未开放。</span>
+        </div>
+      </li>
+      <li class="branch is-live">
+        <span class="arm" aria-hidden="true"></span>
+        <a href="https://blog.atschx.me/about/">
+          <span class="entry-name">About Me ↗</span>
+          <span class="entry-zh">关于我</span>
+          <span class="entry-desc" lang="en">The person, and selected work.</span>
+          <span class="entry-zhdesc" lang="zh-Hans">认识这个人,以及代表作品。</span>
+        </a>
+      </li>
+    </ol>
+  </nav>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  <p class="gh"><a href="https://github.com/atschx">GitHub ↗</a></p>
+</body>
+</html>
