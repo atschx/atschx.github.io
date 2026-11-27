@@ -154,17 +154,7 @@ img { max-width: 100%; display: block; }
 .dir-e .pos {
   position: relative;
   z-index: 2;
-  width: min(34rem, 46vw);
   margin: 10px 0 0 48px;
-  padding: 12px 14px 14px;
-  border: 1px dashed var(--mute);
-  background: rgba(230, 232, 239, 0.42);
-}
-
-@media (prefers-color-scheme: dark) {
-  .dir-e .pos {
-    background: rgba(5, 7, 15, 0.34);
-  }
 }
 
 .dir-e .pos-line {

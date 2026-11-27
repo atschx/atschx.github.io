@@ -19,13 +19,13 @@ Based on OKLCH color roles with shared hues across modes:
 - Oversized "atschx" in Bodoni Moda typeface
 - Positioning line: **都是为此**
 - Three navigation entries:
-  - **Blog** ↗ → https://blog.atschx.me (live, solid line)
+  - **Blog** → https://blog.atschx.me (live, solid line)
   - **Photography** → Coming soon (dashed line, not clickable)
-  - **About Me** ↗ → https://blog.atschx.me/about/ (live, solid line)
+  - **About Me** → https://blog.atschx.me/about/ (live, solid line)
 - GitHub corner link
 
 ### Responsive Design
-- Full support for desktop (1440×900), tablet (768×1024), and mobile (390×844)
+- Full support for desktop, tablet, and mobile
 - Optimized typography and spacing for each breakpoint
 - Touch-friendly interaction targets
 
@@ -60,20 +60,11 @@ bundle exec jekyll serve
 python3 -m http.server 8080
 ```
 
-## Screenshots
-
-See `/opt/cursor/artifacts/` for preview screenshots:
-- `desktop-light.png` - Desktop light mode (1440×900 @2x)
-- `desktop-dark.png` - Desktop dark mode (1440×900 @2x)
-- `mobile-light.png` - Mobile light mode (390×844 @2x)
-- `mobile-dark.png` - Mobile dark mode (390×844 @2x)
-- `tablet-light.png` - Tablet light mode (768×1024 @2x)
-
 ## Credits
 
-Design: Direction E by atschx
+Design: Direction E by atschx  
 Implementation: 2026-11-27
 
 ---
 
-**Note**: This design replaces the previous blog layout with owner (Albert/atschx) authorization.
+**Note**: This design replaces the previous blog layout with owner authorization.
